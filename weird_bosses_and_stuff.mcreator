@@ -1,0 +1,231 @@
+{
+  "mod_elements": [
+    {
+      "name": "Lolipop",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lolipop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/entity/LolipopEntity.java",
+          "src/main/java/net/mcreator/weirdbossesandstuff/client/renderer/LolipopRenderer.java",
+          "src/main/resources/assets/weird_bosses_and_stuff/items/lolipop_spawn_egg.json",
+          "src/main/resources/data/weird_bosses_and_stuff/neoforge/biome_modifier/lolipop_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Lolipopsword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lolipopsword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/item/LolipopswordItem.java",
+          "src/main/resources/assets/weird_bosses_and_stuff/models/item/lolipopsword.json",
+          "src/main/resources/assets/weird_bosses_and_stuff/items/lolipopsword.json"
+        ]
+      }
+    },
+    {
+      "name": "LolipopEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lolipop_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/procedures/LolipopEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Back",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/procedures/BackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hi",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/client/gui/HiScreen.java",
+          "src/main/java/net/mcreator/weirdbossesandstuff/world/inventory/HiMenu.java",
+          "src/main/java/net/mcreator/weirdbossesandstuff/network/HiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "HOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/procedures/HOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "H",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/network/HMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Sandwich",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandwich",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/entity/SandwichEntity.java",
+          "src/main/resources/data/weird_bosses_and_stuff/neoforge/biome_modifier/sandwich_biome_modifier.json",
+          "src/main/resources/assets/weird_bosses_and_stuff/items/sandwich_spawn_egg.json",
+          "src/main/java/net/mcreator/weirdbossesandstuff/client/renderer/SandwichRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SandwichEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandwich_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weirdbossesandstuff/procedures/SandwichEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Lolipopsword"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.weird_bosses_and_stuff.hi.label_version": "version :",
+      "item.weird_bosses_and_stuff.lolipop_spawn_egg": "Lolipop Spawn Egg",
+      "gui.weird_bosses_and_stuff.hi.button_ok": "OK",
+      "entity.weird_bosses_and_stuff.sandwich": "Sandwich",
+      "item.weird_bosses_and_stuff.lolipopsword": "Lolipopsword",
+      "gui.weird_bosses_and_stuff.hi.label_alpha_002": "alpha 0.0.2",
+      "gui.weird_bosses_and_stuff.hi.label_hi_this_is_a_mod": "Hi this is a mod",
+      "item.weird_bosses_and_stuff.sandwich_spawn_egg": "Sandwich Spawn Egg",
+      "key.weird_bosses_and_stuff.h": "Hi",
+      "gui.weird_bosses_and_stuff.hi.label_that_adds_a_lot_of_weird_stuff": "that adds a lot of weird stuff",
+      "entity.weird_bosses_and_stuff.lolipop": "Lolipop"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "weird_bosses_and_stuff",
+    "modName": "weird bosses and stuff",
+    "version": "0.0.2",
+    "description": "a mod that adds weird stuff",
+    "author": "membercatcousin",
+    "websiteURL": "https://modrinth.com/mod/wbas",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "credits": "memmbercat cousin",
+    "modElementsPackage": "net.mcreator.weirdbossesandstuff"
+  },
+  "mcreatorVersion": 202500110519
+}
